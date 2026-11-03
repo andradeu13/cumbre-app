@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cumbre — tu coach</title>
+<meta name="description" content="Coach interactivo con misiones, rachas y mapa de montaña.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="ds/tokens.css">
+<link rel="stylesheet" href="ds/components.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="cb">
+<div id="app" aria-live="polite"></div>
+<div class="tabwrap"><nav id="tabs" class="cb-tabbar" aria-label="Secciones">
+  <button class="cb-tab" data-tab="hoy"><i class="cb-ico cb-ico-home"></i>Hoy</button>
+  <button class="cb-tab" data-tab="semana"><i class="cb-ico cb-ico-journal"></i>Semana</button>
+  <button class="cb-tab__fab" data-act="fab" aria-label="Añadir tarea"><i class="cb-ico cb-ico-plus"></i></button>
+  <button class="cb-tab" data-tab="progreso"><i class="cb-ico cb-ico-chart"></i>Progreso</button>
+  <button class="cb-tab" data-tab="iguana"><i class="cb-ico cb-ico-star"></i>Iguana</button>
+</nav></div>
+<div id="overlay" hidden></div>
+<div id="toast" hidden></div>
+<script src="store.js"></script>
+<script src="learn.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
